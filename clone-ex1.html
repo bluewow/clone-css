@@ -6,8 +6,8 @@
     <title>한화생명 다이렉트</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body>
-    <header class="flex items-center justify-between p-6">
+  <body class="w-screen flex flex-col items-center">
+    <header class="max-w-[1440px] w-full flex items-center justify-between p-6">
       <!-- 로고이미지 -->
       <img src="logo.svg" alt="한화생명 로고" />
 
@@ -25,16 +25,20 @@
         <li>아이콘2</li>
       </ul>
     </header>
-    <main>
+    <main class="w-screen items-center flex flex-col">
       <!-- Section1 -->
-      <section class="text-center bg-yellow-200 p-6 text-xl">
+      <section
+        class="w-full items-center text-center bg-yellow-200 p-6 text-xl"
+      >
         <a href="https://direct.hanwhalife.com/analysis"
           >내게 부족한 보험은 무엇일까? <strong>내 보험 분석해보기 ></strong></a
         >
       </section>
 
       <!-- Section2 -->
-      <section class="grid grid-rows-2 grid-cols-[2.5fr_2fr] gap-16 p-6 px-14">
+      <section
+        class="max-w-[1440px] w-full items-center grid grid-rows-2 grid-cols-[2.5fr_2fr] gap-16 p-6 px-14"
+      >
         <!-- 오늘의 추천 -->
         <article class="row-span-2">
           <div class="text-xl p-4"><strong>오늘의 추천</strong></div>
@@ -69,7 +73,7 @@
               class="shadow-lg border-solid border-2 rounded-lg flex flex-col justify-center items-center bg-white py-4"
             >
               <img class="size-10" src="암.png" alt="암" />
-              <div>암</div>
+              <p>암</p>
             </li>
             <li
               class="shadow-lg border-solid border-2 rounded-lg flex flex-col justify-center items-center bg-white py-4"
@@ -131,7 +135,7 @@
       </section>
 
       <!-- Section3 -->
-      <section class="p-6">
+      <section class="max-w-[1440px] w-full items-center p-6">
         <div class="text-xl mb-4">
           <strong>어떤 보험상품을 원하시나요?</strong>
         </div>
@@ -153,12 +157,12 @@
               <img class="size-10" src="암.png" alt="암" />
               <div>암</div>
             </div>
-            <div class="relative">
+            <div class="flex items-center justify-between">
               <div>
-                <strong>암보험(비갱신)</strong><br />보험료 인상없이 최대
-                1억원<br />보장하는 든든한 암보험
+                <strong>암보험(비갱신)</strong>
+                <p>보험료 인상없이 최대 1억원<br />보장하는 든든한 암보험</p>
               </div>
-              <div class="absolute right-4 top-6">></div>
+              <div>></div>
             </div>
             <div class="border my-4"></div>
             <div>다이렉트</div>
