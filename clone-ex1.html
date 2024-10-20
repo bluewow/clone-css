@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>한화생명 다이렉트</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/a363400aa9.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body class="max-w-[1220px] mx-auto">
     <header class="flex items-center p-6 font-bold text-lg">
@@ -16,8 +20,8 @@
         <div>이벤트·혜택</div>
       </div>
       <div class="flex space-x-4 ml-8">
-        <div>1</div>
-        <div>2</div>
+        <i class="fa-solid fa-person"></i>
+        <i class="fa-solid fa-grip-lines"></i>
       </div>
     </header>
     <section class="text-center text-xl bg-yellow-100 p-6">
@@ -29,9 +33,9 @@
     </section>
     <main>
       <!-- Section1 -->
-      <section class="flex">
-        <div class="basis-3/5 p-6">
-          <p class="text-lg mb-4"><b>오늘의 추천</b></p>
+      <section class="py-8 grid grid-cols-[1.5fr,1fr] gap-x-24">
+        <div>
+          <p class="text-2xl py-6"><b>오늘의 추천</b></p>
           <div class="relative h-[412px]">
             <img
               class="bg-red-400 rounded-2xl object-contain w-full h-full"
@@ -46,31 +50,96 @@
             </p>
           </div>
         </div>
-        <div class="basis-2/5">
-          <div>
-            <div class="text-lg p-6"><b>보험상품</b></div>
-            <div class="grid grid-flow-col grid-rows-2">
-              <div
-                class="flex flex-col items-center shadow-lg border-2 rounded-lg bg-white size-"
-              >
-                <img class="size-10" src="images/암.png" alt="암" />
-                <div>암</div>
-              </div>
-              <div>암</div>
-              <div>암</div>
-              <div>암</div>
-              <div>암</div>
-              <div>암</div>
+        <div>
+          <div class="flex text-2xl py-6"><b>보험상품</b></div>
+          <div class="grid grid-cols-3 gap-y-8 gap-x-8">
+            <div
+              class="flex flex-col items-center justify-center shadow-lg border-2 rounded-lg bg-white h-[102px]"
+            >
+              <img class="size-10" src="images/암.png" alt="암" />
+              <p>암</p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center shadow-lg border-2 rounded-lg bg-white h-[102px]"
+            >
+              <img class="size-10" src="images/건강.png" alt="건강" />
+              <p>건강</p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center shadow-lg border-2 rounded-lg bg-white h-[102px]"
+            >
+              <img class="size-10" src="images/사망.png" alt="사망" />
+              <p>사망</p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center shadow-lg border-2 rounded-lg bg-white h-[102px]"
+            >
+              <img class="size-10" src="images/저축연금.png" alt="저축연금" />
+              <p>저축연금</p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center shadow-lg border-2 rounded-lg bg-white h-[102px]"
+            >
+              <img class="size-10" src="images/유병자.png" alt="유병자" />
+              <p>유병자</p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center shadow-lg border-2 rounded-lg bg-white h-[102px]"
+            >
+              <img
+                class="size-10"
+                src="images/보험분석.png"
+                alt="내 보험 분석"
+              />
+              <p>내 보험 분석</p>
             </div>
           </div>
-          <div>
-            <div class="text-lg p-6"><b>대출상품</b></div>
+          <div class="flex text-2xl py-6"><b>대출상품</b></div>
+
+          <div class="grid grid-cols-3 gap-y-8 gap-x-8">
+            <div
+              class="flex flex-col items-center justify-center shadow-lg border-2 rounded-lg bg-white h-[102px]"
+            >
+              <img
+                class="size-10"
+                src="images/보험계약대출.png"
+                alt="보험계약대출"
+              />
+              <p>보험계약대출</p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center shadow-lg border-2 rounded-lg bg-white h-[102px]"
+            >
+              <img class="size-10" src="images/신용대출.png" alt="신용대출" />
+              <p>신용대출</p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center shadow-lg border-2 rounded-lg bg-white h-[102px]"
+            >
+              <img class="size-10" src="images/담보대출.png" alt="담보대출" />
+              <p>담보대출</p>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- Section2 -->
-      <section>어떤 보험상품을 원하시나요?</section>
+      <section class="py-8">
+        <p class="text-3xl py-6"><b>어떤 보험상품을 원하시나요?</b></p>
+        <div class="flex space-x-2">
+          <p
+            class="border rounded-full bg-gray-600 text-white text-lg py-2 px-4"
+          >
+            인기상품 TOP4
+          </p>
+          <p class="border rounded-full bg-red-100 text-lg py-2 px-4">
+            안정적인 목돈마련
+          </p>
+          <p class="border rounded-full bg-red-100 text-lg py-2 px-4">
+            처음 보험료 그대로
+          </p>
+        </div>
+      </section>
 
       <!-- Section3 -->
       <section>
