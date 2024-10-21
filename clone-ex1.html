@@ -13,10 +13,10 @@
   <body>
     <header class="fixed top-0 z-10 w-full h-[73px] shadow bg-white">
       <div
-        class="flex items-center p-4 font-bold text-lg mx-auto max-w-[1220px]"
+        class="flex items-center p-4 font-bold text-lg mx-auto max-w-[1220px] max-[1024px]:justify-between"
       >
         <img src="images/logo.svg" alt="한화생명 다이렉트" />
-        <div class="flex flex-1 justify-end spa space-x-10">
+        <div class="flex flex-1 justify-end spa space-x-10 max-[1024px]:hidden">
           <div>전체상품</div>
           <div>고객센터</div>
           <div>공지사항</div>
@@ -37,8 +37,10 @@
     </section>
     <main class="max-w-[1220px] mx-auto">
       <!-- Section1 -->
-      <section class="py-8 grid grid-cols-[1.5fr,1fr] gap-x-24">
-        <div>
+      <section
+        class="py-8 grid grid-cols-[1.5fr,1fr] gap-x-24 max-[1024px]:grid-cols-1"
+      >
+        <div class="max-[1024px]:hidden">
           <p class="text-2xl py-6"><b>오늘의 추천</b></p>
           <div class="relative h-[412px]">
             <img
@@ -222,9 +224,77 @@
       </section>
 
       <!-- Section3 -->
-      <section>
-        <div>공지사항</div>
-        <div>한화생명 앱 다운로드</div>
+      <section class="grid grid-rows-2 grid-cols-2 gap-4">
+        <div class="text-2xl py-6 pr-16">
+          <h3 class="mb-4"><b>공지사항</b></h3>
+          <div class="flex text-lg py-2 justify-between">
+            <div class="">내 보험 분석 오픈 이벤트 참여 방법 안내</div>
+            <span>2024.8.21</span>
+          </div>
+          <div class="flex text-lg py-2 justify-between">
+            <div class="">다이렉트 홈페이지 24년 4월 1일자 개정 안내</div>
+            <span>2024.3.27</span>
+          </div>
+          <div class="flex text-lg py-2 justify-between">
+            <div class="">한화생명, 다이렉트 보장분석 서비스 오픈</div>
+            <span>2024.7.3</span>
+          </div>
+        </div>
+        <div class="text-2xl py-6 pl-16">
+          <h3 class="mb-4"><b>한화생명 앱 다운로드</b></h3>
+          <div class="flex justify-between items-end">
+            <div>
+              <p class="text-lg mb-16">
+                보험을 가입부터 관리까지 한번에!<br />
+                한화생명 모바일앱을 만나보세요.
+              </p>
+              <div class="flex">
+                <img
+                  class="px-4 border-1 shadow-sm"
+                  src="images/img_store_google.svg"
+                  alt="구글 플레이스토어"
+                />
+                <img
+                  class="px-4 border-1 shadow-sm"
+                  src="images/img_store_apple.svg"
+                  alt="애플 앱스토어"
+                />
+              </div>
+            </div>
+            <div class="flex flex-col items-center">
+              <img src="images/img_qr.svg" alt="한화생명 앱 다운로드" />
+              <p class="text-sm">앱 다운로드 QR 코드</p>
+            </div>
+          </div>
+        </div>
+        <div class="p-8 bg-blue-500 rounded-3xl flex justify-between h-[200px]">
+          <div class="py-2">
+            <p class="text-sm text-white py-4">e시그니처건강보험(무)</p>
+            <p class="text-2xl text-white">
+              <b>암 뇌 심장 한번에<br />보장받는 건강보험 출시</b>
+            </p>
+          </div>
+          <img
+            class="h-[140px]"
+            src="images/z2Ota4zQW6whdUZf_1725003150853.png"
+            alt="건강보험"
+          />
+        </div>
+        <div
+          class="p-8 bg-amber-500 rounded-3xl flex justify-between h-[200px]"
+        >
+          <div class="py-2">
+            <p class="text-sm text-white py-4">e시그니처건강보험(무)</p>
+            <p class="text-2xl text-white">
+              <b>암 뇌 심장 한번에<br />보장받는 건강보험 출시</b>
+            </p>
+          </div>
+          <img
+            class="h-[140px]"
+            src="images/z2Ota4zQW6whdUZf_1725003150853.png"
+            alt="건강보험"
+          />
+        </div>
       </section>
     </main>
     <footer class="max-w-[1220px] w-full flex items-center"></footer>
